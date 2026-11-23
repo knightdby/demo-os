@@ -1,0 +1,136 @@
+{
+  "vast-hero.jpg": {
+    "source_page": "https://www.vastspace.com/",
+    "asset_url": "https://cdn.prod.website-files.com/6685783e25a3393548894173/69951836a4b3f4d30a9f35f6_Fallback---Feb-2026.jpg",
+    "credit": "Vast",
+    "usage": "User-requested local design reference; no redistribution or publication license verified. Replace or obtain authorization before public launch."
+  },
+  "projects/awam.jpg": {
+    "source": "../../demo-awam/assets/images/real-piper/1.5block-1.jpg",
+    "project": "https://knightdby.github.io/awam-demo/"
+  },
+  "projects/opennwm.webp": {
+    "source_page": "https://openspace-lab.github.io/OpenNWM/",
+    "asset": "OpenNWM hero journey poster",
+    "credit": "OpenSpace Lab / OpenNWM"
+  },
+  "projects/awam-letters.jpg": {
+    "source_page": "https://knightdby.github.io/awam-demo/",
+    "credit": "OpenSpace Lab / AWAM",
+    "usage": "Project cover composed from real robot task stills using HTML/CSS."
+  },
+  "projects/awam-equation.jpg": {
+    "source_page": "https://knightdby.github.io/awam-demo/",
+    "credit": "OpenSpace Lab / AWAM",
+    "usage": "Project cover composed from real robot task stills using HTML/CSS."
+  },
+  "projects/awam-numbers.jpg": {
+    "source_page": "https://knightdby.github.io/awam-demo/",
+    "credit": "OpenSpace Lab / AWAM",
+    "usage": "Project cover composed from real robot task stills using HTML/CSS."
+  },
+  "projects/spikevla.png": {
+    "source": "https://arxiv.org/html/2606.27807v1/overview_c.png",
+    "credit": "Original paper authors",
+    "usage": "Research illustration for the corresponding publication and research area"
+  },
+  "projects/space-mining.png": {
+    "source": "https://arxiv.org/html/2608.21358v1/IMG/cover.png",
+    "credit": "Original paper authors",
+    "usage": "Research illustration for the corresponding publication and research area"
+  },
+  "projects/opennwm-architecture.svg": {
+    "source": "https://openspace-lab.github.io/OpenNWM/assets/paper/method-overview-dark-20261031.svg",
+    "credit": "Original project / paper authors"
+  },
+  "projects/spikevla-architecture.png": {
+    "source": "https://arxiv.org/html/2606.27807v1/spike_framework.png",
+    "credit": "Original project / paper authors"
+  },
+  "projects/space-mining-framework.png": {
+    "source": "https://arxiv.org/html/2608.21358v1/pipeline.png",
+    "credit": "Original project / paper authors"
+  },
+  "projects/spikevla-experiments.png": {
+    "source": "https://arxiv.org/html/2606.27807v1/robotic.png",
+    "credit": "Original project / paper authors"
+  },
+  "projects/space-mining-robots.png": {
+    "source": "https://arxiv.org/html/2608.21358v1/robots_list.png",
+    "credit": "Original project / paper authors"
+  },
+  "projects/opennwm-paper-architecture.png": {
+    "source": "https://arxiv.org/html/2611.01844v1/NWM.png",
+    "credit": "OpenNWM paper authors",
+    "usage": "Original white-background paper architecture figure"
+  },
+  "projects/lunar-robotic-systems.png": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated concept illustration",
+    "description": "Concept illustration of a lunar robot chassis, suspension, arm and sampling tool",
+    "not_mission_photography": true
+  },
+  "projects/lunar-embodied-intelligence.png": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated concept illustration",
+    "description": "Concept illustration of autonomous lunar robotic navigation and sample collection",
+    "not_mission_photography": true
+  },
+  "projects/lunar-simulation-world-models.png": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated concept illustration",
+    "description": "Concept illustration linking lunar terrain with a digital twin wireframe",
+    "not_mission_photography": true
+  },
+  "projects/lunar-robotic-systems-v2.png": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated research concept illustration",
+    "structural_reference": "https://www.hf.cas.cn/xwzx/jqyw/201312/W020131202589304952847.jpg",
+    "not_mission_photography": true
+  },
+  "projects/lunar-embodied-intelligence-v2.png": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated research concept illustration",
+    "structural_reference": "https://www.hf.cas.cn/xwzx/jqyw/201312/W020131202589304952847.jpg",
+    "not_mission_photography": true
+  },
+  "projects/lunar-simulation-world-models-v2.png": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated research concept illustration",
+    "structural_reference": "https://www.hf.cas.cn/xwzx/jqyw/201312/W020131202589304952847.jpg",
+    "not_mission_photography": true
+  },
+  "projects/lunar-robotic-systems-v3.png": {
+    "source": "OpenAI built-in ImageGen edit",
+    "type": "AI-generated concept illustration",
+    "edit": "Right platform replaced with a quadruped robot dog carrying a back-mounted manipulator; other scene retained.",
+    "reference": "projects/lunar-robotic-systems-v2.png"
+  },
+  "projects/lunar-robotic-systems-v3.webp": {
+    "source": "OpenAI built-in ImageGen edit",
+    "type": "AI-generated concept illustration",
+    "edit": "Right platform replaced with a quadruped robot dog carrying a back-mounted manipulator; other scene retained.",
+    "reference": "projects/lunar-robotic-systems-v2.png",
+    "encoding": "WebP delivery copy; original PNG retained"
+  },
+  "projects/lunar-embodied-intelligence-v2.webp": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated research concept illustration",
+    "structural_reference": "https://www.hf.cas.cn/xwzx/jqyw/201312/W020131202589304952847.jpg",
+    "not_mission_photography": true,
+    "encoding": "WebP delivery copy; original PNG retained"
+  },
+  "projects/lunar-simulation-world-models-v2.webp": {
+    "source": "OpenAI built-in ImageGen",
+    "type": "AI-generated research concept illustration",
+    "structural_reference": "https://www.hf.cas.cn/xwzx/jqyw/201312/W020131202589304952847.jpg",
+    "not_mission_photography": true,
+    "encoding": "WebP delivery copy; original PNG retained"
+  },
+  "videos/robotic-systems-structure.mp4": {
+    "source": "prevideo/robotic-systems/runs/01-scout-structure-v2/01-scout-structure-v2.mp4",
+    "type": "AI-generated concept video",
+    "encoding": "H.264, 1280x720, CRF24, no audio, faststart",
+    "display": "User-controlled playback with concept image poster"
+  }
+}

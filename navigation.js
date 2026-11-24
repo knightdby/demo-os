@@ -1,60 +1,42 @@
-// Accessible mobile navigation and scroll-aware section highlighting.
+// Shared navigation for the homepage and the separate publications page.
 (() => {
+  const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
-  const navigation = document.getElementById('site-nav');
-  if (!toggle || !navigation) return;
-  const links = [...navigation.querySelectorAll('a')];
-  const sections = links.map(link => document.querySelector(link.hash)).filter(Boolean);
-  const desktop = matchMedia('(min-width: 761px)');
-  let scheduled = false;
-
-  function setMenu(open, restoreFocus = false) {
+  const nav = document.getElementById('site-nav');
+  if (!header || !toggle || !nav) return;
+  function setMenu(open, focus = false) {
+    nav.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-    navigation.classList.toggle('open', open);
-    if (restoreFocus) toggle.focus();
-  }
-  function updateActive() {
-    scheduled = false;
-    const line = document.querySelector('.site-header').getBoundingClientRect().height + 100;
-    let active = null;
-    for (const section of sections) {
-      if (section.getBoundingClientRect().top <= line) active = section.id;
-    }
-    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) active = 'about';
-    for (const link of links) {
-      if (link.hash === '#' + active) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    }
-  }
-  function scheduleUpdate() {
-    if (!scheduled) { scheduled = true; requestAnimationFrame(updateActive); }
+    if (focus) toggle.focus();
   }
   toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
-  navigation.addEventListener('click', event => {
-    const link = event.target.closest('a');
-    if (!link) return;
-    const wasOpen = toggle.getAttribute('aria-expanded') === 'true';
-    setMenu(false);
-    if (wasOpen) {
-      const target = document.querySelector(link.hash);
-      if (target) {
-        target.setAttribute('tabindex', '-1');
-        target.focus({preventScroll: true});
-      }
-    }
+  nav.addEventListener('click', event => {
+    if (event.target.closest('a')) setMenu(false);
+  });
+  document.addEventListener('click', event => {
+    if (!header.contains(event.target)) setMenu(false);
   });
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') setMenu(false, true);
   });
-  document.addEventListener('click', event => {
-    if (!event.target.closest('.site-header')) setMenu(false);
-  });
-  desktop.addEventListener('change', () => { setMenu(false); scheduleUpdate(); });
-  addEventListener('scroll', scheduleUpdate, {passive: true});
-  addEventListener('resize', scheduleUpdate, {passive: true});
-  addEventListener('hashchange', scheduleUpdate);
-  addEventListener('load', scheduleUpdate);
-  document.fonts?.ready.then(scheduleUpdate);
-  scheduleUpdate();
+  matchMedia('(min-width: 761px)').addEventListener('change', () => setMenu(false));
+  const research = document.getElementById('research');
+  const researchLink = nav.querySelector('a[href="#research"]');
+  let pending = false;
+  function update() {
+    pending = false;
+    header.classList.toggle('scrolled', scrollY > 20);
+    if (research && researchLink) {
+      if (research.getBoundingClientRect().top <= header.offsetHeight + 100) researchLink.setAttribute('aria-current', 'location');
+      else researchLink.removeAttribute('aria-current');
+    }
+  }
+  addEventListener('scroll', () => {
+    if (!pending) { pending = true; requestAnimationFrame(update); }
+  }, {passive: true});
+  // Preserve old bookmarks after moving the inline publications into their own page.
+  if (research && location.hash === '#publications') location.replace('publications.html');
+  if (research && location.hash === '#research-areas') location.replace('#research');
+  update();
 })();

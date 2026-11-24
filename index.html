@@ -5,18 +5,11 @@
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
   <meta content="#0a0f18" name="theme-color"/>
   <title>
-   OpenSpace Lab — Building next-generation space intelligence
+   OpenSpace Lab — Space intelligence
   </title>
-  <meta content="OpenSpace Lab explores world models, embodied intelligence, and autonomous navigation. Discover AWAM-0, OpenNWM, and open research resources." name="description"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&amp;display=swap" rel="stylesheet"/>
+  <meta content="Robotic systems, embodied intelligence, simulation and world models for future space operations." name="description"/>
   <link href="style.css" rel="stylesheet"/>
-  <noscript>
-   <style>
-    @media(max-width:760px){.menu-toggle{display:none}.nav-links{display:flex}}
-   </style>
-  </noscript>
+  <link href="assets/fonts/fonts.css" rel="stylesheet"/>
  </head>
  <body>
   <a class="skip-link" href="#main-content">
@@ -24,13 +17,13 @@
   </a>
   <header class="site-header">
    <nav aria-label="Main navigation" class="container header-inner">
-    <a class="brand" href="#home">
+    <a class="brand" href="index.html">
      <span>
       OpenSpace
      </span>
      Lab
     </a>
-    <button aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+    <button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
      <span>
      </span>
      <span>
@@ -39,311 +32,172 @@
      </span>
     </button>
     <div class="nav-links" id="site-nav">
-     <a href="#research-areas">
-      Research Areas
+     <a href="#research">
+      Research
      </a>
-     <a href="#publications">
+     <a href="publications.html">
       Publications
-     </a>
-     <a href="#about">
-      About
      </a>
     </div>
    </nav>
   </header>
   <main id="main-content" tabindex="-1">
-   <div id="main-view">
-    <section aria-labelledby="hero-title" class="hero" id="home">
-     <img alt="" class="hero-image" decoding="async" fetchpriority="high" height="1080" src="assets/vast-hero.jpg" width="1920"/>
-     <div class="shade">
+   <section aria-labelledby="hero-title" class="hero" id="home">
+    <video aria-hidden="true" autoplay="" class="hero-image hero-video" height="1080" loop="" muted="" playsinline="" poster="assets/projects/home-journey-poster.jpg" preload="auto" tabindex="-1" width="1920">
+     <source src="assets/videos/hero/home-journey-40s.mp4" type="video/mp4"/>
+    </video>
+    <div class="shade">
+    </div>
+    <div class="hero-content container">
+     <h1 class="hero-slogan" id="hero-title">
+      Building next-generation
+      <br/>
+      <span>
+       space intelligence.
+      </span>
+     </h1>
+     <div aria-label="Research focus" class="hero-emphasis">
+      <span>
+       Space Robotics
+      </span>
+      <span>
+       Physical AI
+      </span>
+      <span>
+       World Models
+      </span>
      </div>
-     <div class="hero-content container">
-      <h1 class="hero-slogan" id="hero-title">
-       Building next-generation
-       <br/>
-       <span>
-        space intelligence.
-       </span>
-      </h1>
+    </div>
+   </section>
+   <section aria-label="About OpenSpace Lab" class="about-section" id="about">
+    <div class="container about-inner">
+     <div class="about-text">
+      <p>
+       <strong>
+        OpenSpace Lab
+       </strong>
+       develops robotic systems and intelligence for future space operations. Our research connects:
+      </p>
+      <ul>
+       <li>
+        <strong>
+         Robotic Systems
+        </strong>
+        — robot bodies, mechanisms, actuation, and tools.
+       </li>
+       <li>
+        <strong>
+         Embodied Intelligence
+        </strong>
+        — perception, navigation, planning, and manipulation.
+       </li>
+       <li>
+        <strong>
+         Digital Moon
+        </strong>
+        — lunar imagery, elevation, and geospatial data for exploring and simulating the Moon.
+       </li>
+      </ul>
+      <p>
+       Our work spans research models, ground-based robotic demonstrations, and space-resource robotics. We share publications and open resources to support the research community.
+      </p>
      </div>
-     <div class="hero-bottom container">
-      <a href="#research-areas">
-       Explore the lab
-      </a>
+    </div>
+   </section>
+   <section aria-labelledby="research-title" class="research-section" id="research">
+    <div class="container">
+     <div class="content-heading">
+      <h2 id="research-title">
+       Research
+      </h2>
+      <p>
+       Selected projects, models, and research from OpenSpace Lab.
+      </p>
      </div>
-    </section>
-    <section id="research-areas">
-     <div class="container">
-      <div class="research-intro content-heading">
-       <h2>
-        Research Areas
-       </h2>
-       <p>
-        Three connected foundations for robotics beyond Earth.
-       </p>
-      </div>
-      <div class="research-panels">
-       <article class="research-panel" id="robotic-systems">
-        <figure class="research-visual lunar-visual research-video-frame">
-         <video aria-label="Robotic systems concept video: rover, drilling platform and quadruped manipulator" autoplay="" class="research-video" controls="" height="1080" loop="" muted="" playsinline="" poster="assets/projects/lunar-robotic-systems-v3.webp" preload="auto" width="1920">
-          <source src="assets/prevideo/robotic-systems/robotic-systems-9s.mp4" type="video/mp4"/>
-          <a href="assets/prevideo/robotic-systems/robotic-systems-9s.mp4">
-           View the robotic systems video
-          </a>
+     <div class="research-grid">
+      <article class="research-card">
+       <a href="https://knightdby.github.io/awam-demo/">
+        <div class="research-media">
+         <video aria-label="AWAM-0 video preview" autoplay="" loop="" muted="" playsinline="" poster="assets/projects/awam-home-mosaic.jpg" preload="metadata">
+          <source src="assets/videos/research/awam-home-mosaic.mp4" type="video/mp4"/>
          </video>
-         <figcaption>
-          Concept video
-         </figcaption>
-        </figure>
-        <div class="research-copy">
-         <h3>
-          Robotic Systems
-         </h3>
-         <p class="research-description">
-          Robot bodies, mechanisms, actuation, end effectors, and integrated sensing across wheeled, legged, and mobile-manipulation platforms for space operations.
-         </p>
-         <ul class="pillar-topics">
-          <li>
-           Wheeled &amp; quadruped platforms
-          </li>
-          <li>
-           Mechanisms &amp; tools
-          </li>
-          <li>
-           System integration
-          </li>
-         </ul>
-        </div>
-       </article>
-       <article class="research-panel" id="embodied-intelligence">
-        <figure class="research-visual lunar-visual">
-         <img alt="Concept illustration of autonomous lunar robotic navigation and sample collection" decoding="async" height="1024" loading="lazy" src="assets/projects/lunar-embodied-intelligence-v2.webp" width="1536"/>
-         <figcaption>
-          Concept illustration
-         </figcaption>
-        </figure>
-        <div class="research-copy">
-         <h3>
-          Embodied Intelligence
-         </h3>
-         <p class="research-description">
-          Perception, navigation, task planning, and dexterous operation for coordinated surveying, drilling, sample handling, and instrument deployment.
-         </p>
-         <ul class="pillar-topics">
-          <li>
-           Navigation &amp; exploration
-          </li>
-          <li>
-           Manipulation &amp; planning
-          </li>
-          <li>
-           Efficient autonomy
-          </li>
-         </ul>
-         <div class="research-selected">
-          <div class="research-project-links">
-           <a href="https://knightdby.github.io/awam-demo/">
-            AWAM-0
-            <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
-             <path d="M4 12h15M13 6l6 6-6 6">
-             </path>
-            </svg>
-           </a>
-           <a href="https://openspace-lab.github.io/OpenNWM/">
-            OpenNWM
-            <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
-             <path d="M4 12h15M13 6l6 6-6 6">
-             </path>
-            </svg>
-           </a>
-           <a href="https://arxiv.org/abs/2606.27807">
-            SpikeVLA
-            <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
-             <path d="M4 12h15M13 6l6 6-6 6">
-             </path>
-            </svg>
-           </a>
-          </div>
+         <div class="research-overlay">
+         </div>
+         <div class="research-info">
+          <h3>
+           AWAM-0
+          </h3>
+          <p>
+           Agentic world action modeling for embodied intelligence.
+          </p>
          </div>
         </div>
-       </article>
-       <article class="research-panel" id="simulation-world-models">
-        <figure class="research-visual lunar-visual">
-         <img alt="Concept illustration linking lunar terrain with a digital twin wireframe" decoding="async" height="1024" loading="lazy" src="assets/projects/lunar-simulation-world-models-v2.webp" width="1536"/>
-         <figcaption>
-          Concept illustration
-         </figcaption>
-        </figure>
-        <div class="research-copy">
-         <h3>
-          Simulation &amp; World Models
-         </h3>
-         <p class="research-description">
-          Physics-based simulation and learned world models for terrain interaction, action-conditioned prediction, policy development, and evaluation before deployment.
-         </p>
-         <ul class="pillar-topics">
-          <li>
-           Terrain &amp; contact physics
-          </li>
-          <li>
-           World prediction
-          </li>
-          <li>
-           Training &amp; evaluation
-          </li>
-         </ul>
-        </div>
-       </article>
-      </div>
-     </div>
-    </section>
-    <section id="publications">
-     <div class="container">
-      <div class="content-heading">
-       <h2>
-        Publications
-       </h2>
-       <p>
-        Papers and open research resources.
-       </p>
-      </div>
-      <div class="publication-year">
-       2026
-      </div>
-      <article class="publication">
-       <a class="publication-image" href="https://arxiv.org/abs/2611.01844">
-        <img alt="OpenNWM navigation world model" decoding="async" height="601" loading="lazy" src="assets/projects/opennwm-paper-architecture.png" width="2045"/>
        </a>
-       <div class="publication-content">
-        <div aria-label="Research directions" class="publication-topics">
-         <span>
-          Embodied Intelligence
-         </span>
-         <span>
-          Simulation &amp; World Models
-         </span>
-        </div>
-        <h3>
-         <a href="https://arxiv.org/abs/2611.01844">
-          OpenNWM: A Generalist Navigation World Model with Latent Action Pretraining
-         </a>
-        </h3>
-        <p class="authors">
-         Dujun Nie, Ruiqi Song, Zixuan Wang, Hanqing Wang, Yifan Han, Baiyong Ding, Wenzhao Zheng, Hangbin Wu, Long Chen
-        </p>
-        <p class="publication-venue">
-         arXiv:2611.01844 · Preprint
-        </p>
-        <div class="resource-links">
-         <a href="https://arxiv.org/abs/2611.01844">
-          Paper
-         </a>
-         <a href="https://openspace-lab.github.io/OpenNWM/">
-          Project
-         </a>
-         <a href="https://github.com/OpenSpace-Lab/OpenNWM">
-          Code
-         </a>
-         <a href="https://huggingface.co/LittleB0sS/OpenNWM">
-          Model
-         </a>
-         <a href="https://huggingface.co/datasets/LittleB0sS/NavAnywhere">
-          Dataset
-         </a>
-        </div>
-       </div>
       </article>
-      <article class="publication">
-       <a class="publication-image" href="https://arxiv.org/abs/2608.21358">
-        <img alt="Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction" decoding="async" height="1749" loading="lazy" src="assets/projects/space-mining-framework.png" width="2040"/>
+      <article class="research-card">
+       <a href="https://moonlife.com.cn/">
+        <div class="research-media">
+         <video aria-label="Rotating Moon using Digital Moon lunar imagery" autoplay="" loop="" muted="" playsinline="" poster="assets/projects/digital-moon-lit-rotation.jpg" preload="metadata">
+          <source src="assets/videos/research/digital-moon-lit.mp4" type="video/mp4"/>
+         </video>
+         <div class="research-overlay">
+         </div>
+         <div class="research-info">
+          <h3>
+           Digital Moon
+          </h3>
+          <p>
+           Explore, measure, and map the Moon with real lunar imagery and elevation data.
+          </p>
+         </div>
+        </div>
        </a>
-       <div class="publication-content">
-        <div aria-label="Research directions" class="publication-topics">
-         <span>
-          Robotic Systems · Review
-         </span>
-        </div>
-        <h3>
-         <a href="https://arxiv.org/abs/2608.21358">
-          Mining beyond Earth with Space Robots: Exploration, Sampling, and Extraction
-         </a>
-        </h3>
-        <p class="authors">
-         Dong Li, Dujun Nie, Xiaotong Zhang, Ruilin Wang, Yuchen Li, Chang Ge, Chao Xiong, Kaichang Di, Andreas Nüchter, Levente Kovács, Qingquan Li, Shirong Ge, Fei-Yue Wang, Long Chen
-        </p>
-        <p class="publication-venue">
-         2026 · Survey · arXiv:2608.21358
-        </p>
-        <div class="resource-links">
-         <a href="https://arxiv.org/abs/2608.21358">
-          Paper
-         </a>
-         <a href="https://arxiv.org/pdf/2608.21358">
-          PDF
-         </a>
-         <a href="https://github.com/OpenSpace-Lab/Space-Mining-with-Robotics-List">
-          Resources
-         </a>
-        </div>
-       </div>
       </article>
-      <article class="publication">
-       <a class="publication-image" href="https://arxiv.org/abs/2606.27807">
-        <img alt="SpikeVLA: Vision-Language-Action Models with Spiking Neural Networks" decoding="async" height="777" loading="lazy" src="assets/projects/spikevla-architecture.png" width="2023"/>
+      <article class="research-card">
+       <a href="https://openspace-lab.github.io/OpenNWM/">
+        <div class="research-media">
+         <video aria-label="OpenNWM video preview" autoplay="" loop="" muted="" playsinline="" poster="assets/projects/opennwm.webp" preload="metadata">
+          <source src="assets/videos/research/opennwm.mp4" type="video/mp4"/>
+         </video>
+         <div class="research-overlay">
+         </div>
+         <div class="research-info">
+          <h3>
+           OpenNWM
+          </h3>
+          <p>
+           A generalist navigation world model with latent action pretraining.
+          </p>
+         </div>
+        </div>
        </a>
-       <div class="publication-content">
-        <div aria-label="Research directions" class="publication-topics">
-         <span>
-          Embodied Intelligence
-         </span>
+      </article>
+      <article class="research-card">
+       <a href="lunar-simulation.html">
+        <div class="research-media">
+         <video aria-label="Lunar Surface Simulation video preview" autoplay="" loop="" muted="" playsinline="" poster="assets/projects/lunar-simulation-0.jpg" preload="metadata">
+          <source src="assets/videos/lunar-simulation/0.mp4" type="video/mp4"/>
+         </video>
+         <div class="research-overlay">
+         </div>
+         <div class="research-info">
+          <h3>
+           Lunar Surface Simulation
+          </h3>
+          <p>
+           A shared lunar environment for rovers, humanoids, and quadruped robots.
+          </p>
+         </div>
         </div>
-        <h3>
-         <a href="https://arxiv.org/abs/2606.27807">
-          SpikeVLA: Vision-Language-Action Models with Spiking Neural Networks
-         </a>
-        </h3>
-        <p class="authors">
-         Ruiqi Song, Dujun Nie, Siyu Teng, Baiyong Ding, Xiaotong Zhang, Dong Li, Chenming Zhang, Yuchen Li, Hangbin Wu, Long Chen
-        </p>
-        <p class="publication-venue">
-         ICML 2026 · arXiv:2606.27807
-        </p>
-        <div class="resource-links">
-         <a href="https://arxiv.org/abs/2606.27807">
-          Paper
-         </a>
-         <a href="https://arxiv.org/pdf/2606.27807">
-          PDF
-         </a>
-        </div>
-       </div>
+       </a>
       </article>
      </div>
-    </section>
-    <section class="about" id="about">
-     <div class="container">
-      <div class="content-heading">
-       <h2>
-        About
-       </h2>
-      </div>
-     </div>
-     <div class="container about-inner">
-      <div class="about-text">
-       <p>
-        OpenSpace Lab investigates robotic systems, embodied intelligence, and world models for future space operations. We connect research in navigation, manipulation, prediction, and efficient computation.
-       </p>
-       <p>
-        Our current work includes research models, ground-based robotic demonstrations, and a review of space-resource robotics. Explore the projects and publications above for methods, results, and open resources.
-       </p>
-      </div>
-     </div>
-    </section>
-   </div>
+    </div>
+   </section>
   </main>
   <footer class="site-footer">
    <div class="container footer-inner">
-    <a class="brand" href="#home">
+    <a class="brand" href="index.html">
      <span>
       OpenSpace
      </span>

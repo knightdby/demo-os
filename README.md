@@ -1,21 +1,18 @@
 # OpenSpace Lab
 
-静态官网：首屏 → Research Areas → Publications → About。
+独立静态网站，无需构建。直接打开 index.html，或在本目录执行 `python3 -m http.server 8000`。
 
-直接打开 index.html，或在此目录执行 `python3 -m http.server 8000` 后访问本地页面。无需构建。Google Fonts 需要联网，离线回退系统字体。
+- index.html：首页，含40秒背景视频与Research。
+- publications.html：论文页。
+- lunar-simulation.html：月面仿真视频页。
+- style.css、navigation.js：共享样式与导航。
+- assets/videos/：全部在用视频，已本地化。
+- assets/fonts/：本地Google Sans Flex，不依赖Google Fonts在线加载。
+- assets/projects/：页面使用的封面与论文图。
+- assets/sources.json：主要素材来源。
 
-## 文件
+本目录可独立复制使用，不依赖demo-awam或工作区其他目录。外部项目、论文、GitHub链接为正常跳转，不属于页面运行依赖。
 
-- `index.html`：当前官网。
-- `style.css`：统一后的页面样式。
-- `navigation.js`：移动导航与滚动高亮。
-- `design.md`：当前设计和验证范围。
-- `research-taxonomy.md`：研究方向与成果映射。
-- `assets/sources.json`：素材来源。
-- `video/`：独立视频实验，当前未接入首页。
+AWAM-0 使用主页2大画面＋6任务画面的拼接总览视频，非单条任务视频。
 
-AWAM 使用 https://knightdby.github.io/awam-demo/；OpenNWM 使用 https://openspace-lab.github.io/OpenNWM/。
-
-月球研究图为概念插画，原始 PNG 保留，页面加载较小的 WebP 副本。机构展示对应 AWAM 团队单位。Vast 首屏素材上线前须确认使用权或替换；本次未部署。
-
-`overview.svg` 为早期构图草案，不代表当前版本；以 index.html 为准。
+旧素材、视频制作过程、脚本和设计记录已移至工作区 `demo-os-archive/2026-11-24-cleanup/`，保留以便恢复。本次未发布。

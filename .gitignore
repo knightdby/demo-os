@@ -1,4 +1,3 @@
-prevideo
-__pycache__
 .DS_Store
-*.py
+__pycache__/
+*.pyc

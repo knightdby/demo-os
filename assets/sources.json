@@ -1,9 +1,9 @@
 {
   "hero_video": {
-    "file": "videos/hero/home-journey-v23.mp4",
+    "file": "videos/hero/home-journey-v24.mp4",
     "source": "User-authorized Wan3 production; records retained outside website in demo-os-archive",
-    "source_file": "demo-os/assets/prevideo/storyboard-forward-v3/revision-v23/video/home-journey-v23-detail-only.mp4",
-    "sha256": "cb9cb98d671d9b95f0622daa42feb691d146f98fa4e63f7f85823d2906b7f284",
+    "source_file": "demo-os/assets/prevideo/storyboard-forward-v3/revision-v24/video/home-journey-v24-refined-32s.mp4",
+    "sha256": "86fa73f917c78a80472c71c5b2033394c9155831b148408fb0c64d69307e5d3a",
     "encoding": "H.264 CRF 25, slow preset, 1920x1080 30fps, silent, faststart"
   },
   "awam": {
